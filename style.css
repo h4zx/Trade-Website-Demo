@@ -185,3 +185,95 @@ footer {
     height: 350px;
   }
 }
+
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    height: auto;
+    padding: 18px 20px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  nav div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  header {
+    min-height: auto;
+    padding: 70px 22px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .btn {
+    margin: 20px auto 0;
+  }
+
+  section,
+  .about,
+  .map-section {
+    width: calc(100% - 32px);
+    margin: 28px auto;
+    padding: 32px 20px;
+  }
+
+  .trust,
+  .cards,
+  .about,
+  .map-section {
+    grid-template-columns: 1fr;
+  }
+
+  .trust div,
+  .cards div {
+    width: 100%;
+  }
+
+  section h2,
+  .about-text h2,
+  .map-text h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  section p,
+  .about-text p,
+  .map-text p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+  }
+
+  #map {
+    height: 320px;
+    width: 100%;
+  }
+}
